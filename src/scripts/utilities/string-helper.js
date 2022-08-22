@@ -5,6 +5,12 @@ const StringHelper = {
         !value ? tempResult : `${tempResult}${separator}${value}`
       ));
     },
+  
+  
+    upperFirst(value) {
+      if(!value.length && typeof(value) !== 'string') return '';
+      return value[0].toUpperCase() + value.slice(1);
+    },
 };
 
 export default StringHelper;
