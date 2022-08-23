@@ -35,4 +35,15 @@
         font-family: 'Poppins', system-ui, sans-serif;
         color: #111;
     }
+
+    main{
+        @apply w-full
+    }
+}
+
+
+@layer components{
+    .container{
+        @apply w-full max-w-[1000px] mx-auto
+    }
 }
