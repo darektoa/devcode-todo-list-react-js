@@ -1,6 +1,6 @@
 const StringHelper = {
     className(...values) {
-      return this.join(' ', ...values);
+      return StringHelper.join(' ', ...values);
     },
 
   
@@ -19,3 +19,8 @@ const StringHelper = {
 };
 
 export default StringHelper;
+export const {
+  className,
+  join,
+  upperFirst,
+} = StringHelper;
