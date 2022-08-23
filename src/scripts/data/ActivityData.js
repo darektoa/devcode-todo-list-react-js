@@ -11,6 +11,15 @@ const ActivityData = {
 
         return resJson;
     },
+
+    async find(id) {
+        const options   = {};
+        const request   = new Request(`${this.endpoint}/${id}`, options);
+        const response  = await fetch(request);
+        const resJson   = await response.json();
+
+        return resJson;
+    },
 };
 
 
