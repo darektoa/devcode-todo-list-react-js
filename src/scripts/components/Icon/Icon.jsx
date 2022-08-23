@@ -5,7 +5,8 @@ const Icon = (props) => {
 
     return (
         <div {...attrs}
-            className={classname(`aspect-square bg-[url('/icons/${name}.${ext}')] bg-no-repeat bg-contain`, className)}>
+            className={classname(`aspect-square bg-[] bg-no-repeat bg-contain`, className)}
+            style={{ backgroundImage: `url(/icons/${name}.${ext})` }}>
         </div>
     );
 }
