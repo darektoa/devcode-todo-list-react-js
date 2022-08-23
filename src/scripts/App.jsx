@@ -1,10 +1,11 @@
-import '../styles/App.css'
-import { Routes } from 'react-router-dom'
+import '../styles/App.css';
+import { Routes, Route } from 'react-router-dom';
+import Activity from './pages/Activity';
 
-function App() {
+const App = () => {
   return (
     <Routes>
-      
+      <Route path="/" element={<Activity/>} />
     </Routes>
   );
 }
