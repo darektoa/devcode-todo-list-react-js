@@ -1,4 +1,9 @@
 const StringHelper = {
+    className(...values) {
+      return this.join(' ', ...values);
+    },
+
+  
     join(separator, ...values) {
       if(!values.length) return '';
       return values.reduce((tempResult, value) => (
