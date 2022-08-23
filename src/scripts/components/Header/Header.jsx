@@ -6,7 +6,7 @@ const Header = (props) => {
 
     return (
         <header {...attrs}
-            className={classname('w-full bg-primary h-[105px]', className)}
+            className={classname('w-full bg-primary h-[105px] shadow-md', className)}
             data-cy="header-background">
             <div className="container h-full flex items-center">
                 <Text.Brand className="text-2xl" />
