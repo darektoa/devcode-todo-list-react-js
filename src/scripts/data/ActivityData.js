@@ -14,9 +14,9 @@ const ActivityData = {
         return resJson;
     },
 
-    async get() {
-        const options   = {};
-        const request   = new Request(this.endpoint, options);
+    async delete(id) {
+        const options   = {method: 'DELETE'};
+        const request   = new Request(`${this.endpoint}/${id}`, options);
         const response  = await fetch(request);
         const resJson   = await response.json();
 
@@ -26,6 +26,15 @@ const ActivityData = {
     async find(id) {
         const options   = {};
         const request   = new Request(`${this.endpoint}/${id}`, options);
+        const response  = await fetch(request);
+        const resJson   = await response.json();
+
+        return resJson;
+    },
+
+    async get() {
+        const options   = {};
+        const request   = new Request(this.endpoint, options);
         const response  = await fetch(request);
         const resJson   = await response.json();
 
