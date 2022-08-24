@@ -37,8 +37,10 @@
     }
 
     main{
-        @apply w-full
+        @apply w-full bg-[#F4F4F4]
     }
+
+    /* *{border: 1px solid red} */
 }
 
 
