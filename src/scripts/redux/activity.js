@@ -10,6 +10,12 @@ const activitySlice = createSlice({
             state.data.push(action.payload);
         },
 
+        remove(state, action) {
+            const id    = Number(action.payload.id);
+            const index = state.data.findIndex((item) => item.id === id);
+            state.data.splice(index, 1);
+        },
+
         init(state, action) {
             state.data = action.payload;
         }
@@ -19,5 +25,6 @@ const activitySlice = createSlice({
 export default activitySlice.reducer;
 export const {
     create,
-    init
+    remove,
+    init,
 } = activitySlice.actions;
