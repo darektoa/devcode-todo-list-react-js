@@ -36,8 +36,8 @@ const Confirm = (props) => {
                     { children }
                 </div>
                 <div className="flex justify-center font-semibold">
-                    <Button className="mr-5 px-12 text-[#4A4A4A] bg-[#F4F4F4]" onClick={closeHandle}>Batal</Button>
-                    <Button className="px-12 text-white bg-danger" onClick={submitHandle}>Hapus</Button>
+                    <Button className="mr-5 px-12 text-[#4A4A4A] bg-[#F4F4F4]" onClick={closeHandle} data-cy="modal-delete-cancel-button">Batal</Button>
+                    <Button className="px-12 text-white bg-danger" onClick={submitHandle} data-cy="modal-delete-confirm-button">Hapus</Button>
                 </div>
             </section>
         </div>
