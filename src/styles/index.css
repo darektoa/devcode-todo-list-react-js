@@ -34,10 +34,11 @@
     html{
         font-family: 'Poppins', system-ui, sans-serif;
         color: #111;
+        background-color: #F4F4F4;
     }
 
     main{
-        @apply w-full bg-[#F4F4F4]
+        @apply w-full
     }
 
     /* *{border: 1px solid red} */
