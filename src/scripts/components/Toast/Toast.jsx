@@ -9,7 +9,7 @@ const Toast = (props) => {
 
     return (
         <section {...attrs}
-            className={classname('max-w-md px-7 py-5 rounded-xl bg-white fixed top-5 right-5 transition-all duration-300', className, showMe || '-right-full')}>
+            className={classname('max-w-md px-7 py-5 rounded-xl bg-white shadow-2xl fixed top-5 right-5 transition-all duration-300', className, showMe || '-right-full')}>
             { children || value}
         </section>
     );
