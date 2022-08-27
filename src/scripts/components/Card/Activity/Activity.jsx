@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Icon from "../../Icon";
 
 const Activity = (props) => {
-    const { className, data, deleteHandle, ...attrs } = props;
+    const { className, data, deleteHandle, to, ...attrs } = props;
     const createdAt = (new Date(data.created_at)).toLocaleDateString('id-ID', { 
         day: 'numeric',
         month: 'long',
@@ -12,7 +12,7 @@ const Activity = (props) => {
 
     return (
         <Link {...attrs}
-            to={`/activity/${data.id}`}
+            to={to || `/activities/${data.id}`}
             className={classname("min-w-[12rem] aspect-square px-7 py-6 bg-white rounded-xl shadow-md flex flex-col justify-between", className)}>
             <h3 className="font-bold text-lg" data-cy="activity-item-title">{data.title}</h3>
             <div className="flex justify-between items-center">
